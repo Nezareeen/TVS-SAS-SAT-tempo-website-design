@@ -1,0 +1,53 @@
+.links-page {
+    padding: 3rem 2rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 60vh;
+  }
+  
+  .links-page h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  
+  .links-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .link-item {
+    margin-bottom: 1rem;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .link:hover {
+    background-color: #eef5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 87, 183, 0.1);
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+  }
+  
