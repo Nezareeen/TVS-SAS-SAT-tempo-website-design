@@ -1,0 +1,122 @@
+.footer {
+    background-color: #656a72;
+    color: white;
+    padding: 40px 0 15px;
+    width: 100%;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .addressColumn, .newsletterColumn {
+    width: 48%;
+  }
+  
+  .heading {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .addressContent {
+    line-height: 1.6;
+  }
+  
+  .companyName, .street, .cityZip {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .email {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .emailIcon {
+    margin-right: 5px;
+  }
+  
+  .certLogo {
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .newsletterText {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .subscribeForm {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .emailInput {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .sendButton {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .copyrightSection {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+  }
+  
+  .copyright, .credits {
+    margin: 0;
+  }
+  
+  .credits {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+    }
+    
+    .addressColumn, .newsletterColumn {
+      width: 100%;
+    }
+    
+    .newsletterColumn {
+      margin-top: 30px;
+    }
+    
+    .copyrightSection {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .copyright {
+      margin-bottom: 5px;
+    }
+  }

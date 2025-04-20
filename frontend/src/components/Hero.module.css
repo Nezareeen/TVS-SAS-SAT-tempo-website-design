@@ -1,0 +1,76 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* align text to the left */
+    padding: 6rem 2rem;
+    background-image: url('/train-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    min-height: 70vh;
+    overflow: hidden;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+  }
+  
+  .textContainer {
+    max-width: 700px;
+    z-index: 2;
+    padding: 2rem;
+    margin-left: 3rem; /* space from the left edge */
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease forwards;
+    animation-delay: 0.2s;
+    background-color: transparent; /* remove dark background */
+  }
+  
+  .textContainer h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .textContainer p {
+    font-size: 1.25rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+  }
+  
+  .ctaButton {
+    background-color: #8BB4D4;
+    color: rgb(30, 30, 30);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #005fa3;
+    color: white;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

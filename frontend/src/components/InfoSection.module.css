@@ -1,0 +1,138 @@
+.section {
+    padding: 4rem 2rem;
+    background-color: #eaf4fb;
+  }
+ 
+  .topRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+  }
+ 
+  .leftText {
+    flex: 1 1 60%;
+    max-width: 60%;
+  }
+ 
+  .leftText h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #003366;
+  }
+ 
+  .leftText p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #005fa3;
+  }
+ 
+  .leftText ul {
+    list-style: none;
+    padding: 0;
+  }
+ 
+  .leftText ul li {
+    margin-bottom: 0.5rem;
+  }
+ 
+  .leftText ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #003366;
+  }
+ 
+  .rightText {
+    flex: 1 1 30%;
+    text-align: right;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #003366;
+  }
+ 
+  .rightText h3 {
+    margin: 0;
+  }
+ 
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    color: #003366;
+  }
+ 
+  .card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+ 
+  .icon {
+    width: 50px;
+    margin-bottom: 1rem;
+  }
+ 
+  .card h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+ 
+  .card p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+ 
+  .card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #005fa3;
+  }
+  
+  /* Train animation styles */
+  .trainTrack {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 15px;
+  }
+  
+  .train {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #005fa3;
+    border-radius: 50%;
+    top: -4px;
+    left: -10px;
+    transition: none;
+  }
+  
+  .trainActive {
+    animation: trainMove 2s linear forwards;
+  }
+  
+  @keyframes trainMove {
+    0% {
+      left: -10px;
+    }
+    100% {
+      left: calc(100% + 10px);
+    }
+  }
